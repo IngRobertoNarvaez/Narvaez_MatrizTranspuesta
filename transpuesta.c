@@ -31,6 +31,15 @@ int main(int argc, char const *argv[])
         }
         printf("\n");
     }
+    printf("La matriz Transpuesta es : \n \n");
 
+    for (int i = 0; i < filas; i++)
+    {
+        for (int j = 0; j < columnas; j++)
+        {
+            printf("%d ", matrise[j][i]);
+        }
+        printf("\n");
+    }
     return 0;
 }

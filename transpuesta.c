@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
     printf("Ingrese las Columnas : ");
     scanf("%d", &columnas);
     int matrio[filas][columnas];
-    int matrise[filas][columnas];
+    int transpuesta[filas][columnas];
     srand(time(NULL));
 
     for (int i = 0; i < filas; i++)
@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
         for (int j = 0; j < columnas; j++)
         {
             matrio[i][j] = rand() % 101;
-            matrise[i][j] = matrio[i][j];
+            transpuesta[i][j] = matrio[i][j];
         }
     }
     printf("La matriz Principal es : \n \n");
@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
     {
         for (int j = 0; j < columnas; j++)
         {
-            printf("%d ", matrise[j][i]);
+            printf("%d ", transpuesta[j][i]);
         }
         printf("\n");
     }
